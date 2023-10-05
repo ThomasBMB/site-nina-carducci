@@ -5,9 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Nina Curducci - Photographe</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<meta name="description"
-		content="Nina Carducci, photographe professionnelle, transforme vos moments spéciaux en souvenirs inoubliables. Réservez dès maintenant pour des portraits, des événements d'entreprise et plus encore.">
+		content="Nina Carducci, photographe professionnelle à Bordeaux, immortalise vos plus beaux moments.">
 	<meta name="keywords" content="photographe, photo, portrait, entreprise, mariage, concert" />
 
 	<!-- Twitter -->
@@ -15,7 +14,7 @@
 	<meta property="twitter:url" content="https://github.com/ThomasBMB/site-nina-carducci" />
 	<meta property="twitter:title" content="Nina Curducci - Photographe" />
 	<meta property="twitter:description"
-		content="Nina Carducci, photographe professionnelle, réalise vos projets photos pour des occasions spéciales, des portraits, des entreprises et plus encore." />
+		content="Nina Carducci, photographe professionnelle à Bordeaux, immortalise vos plus beaux moments." />
 	<meta property="twitter:image"
 		content="https://github.com/ThomasBMB/site-nina-carducci/blob/main/assets/images/gallery/mariage/jakob-owens-couple-marriage.webp" />
 
@@ -24,7 +23,7 @@
 	<meta property="og:url" content="https://github.com/ThomasBMB/site-nina-carducci" />
 	<meta property="og:title" content="Nina Curducci - Photographe" />
 	<meta property="og:description"
-		content="Nina Carducci, photographe professionnelle, réalise vos projets photos pour des occasions spéciales, des portraits, des entreprises et plus encore." />
+		content="Nina Carducci, photographe professionnelle à Bordeaux, immortalise vos plus beaux moments." />
 	<meta property="og:image"
 		content="https://github.com/ThomasBMB/site-nina-carducci/blob/main/assets/images/gallery/mariage/jakob-owens-couple-marriage.webp" />
 	<meta property="og:url" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
@@ -37,7 +36,33 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
 
-
+	<!--  Schema.org -->
+	<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": ["LocalBusiness", "Service"],
+        "name": "Nina Carducci - Photographe",
+		"jobTitle": "Photographe professionnelle",
+		"description": "Nina Carducci, photographe professionnelle à Bordeaux, immortalise vos plus beaux moments",
+		"image": "https://github.com/ThomasBMB/site-nina-carducci/blob/main/assets/images/nina-carducci.webp",
+		"url": "https://github.com/ThomasBMB/site-nina-carducci",
+		"telephone": "+33556677889",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "44.846805572509766",
+			"longitude": "-0.6071873307228088"
+		},
+        "openingHours": ["Mo-Fr 10:00-19:00"],
+        "priceRange": "de 50€ à 400€"
+	  }
+	</script>
 </head>
 
 <body>
@@ -227,9 +252,12 @@
 		</section>
 	</main>
 	<footer>
-		<span class="footer-contact">Nina Carducci Photographe</span>
-		<span class="footer-contact">68 avenue Alsace-Lorraine, 33200 Bordeaux</span>
-		<span class="footer-contact">Téléphone : 05 56 67 78 89 (du lundi au vendredi de 10 h à 19 h)</span>
+		<span class="footer-contact" itemscope itemprop="http://schema.org/Person">Nina Carducci Photographe</span>
+		<span class="footer-contact" itemscope itemtype="http://schema.org/PostalAddress">68 avenue Alsace-Lorraine,
+			33200 Bordeaux</span>
+		<span class="footer-contact">05 56 67 78 89</span>
+		<span class="footer-contact" itemprop="OpeningHoursSpecification" itemscope
+			itemtype="http://schema.org/OpeningHoursSpecification">Disponible du lundi au vendredi de 10h à 19h</span>
 	</footer>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
