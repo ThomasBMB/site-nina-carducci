@@ -1,3 +1,5 @@
+
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -6,11 +8,6 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
-}
-
-img {
-	width: 100%;
-	height: 100%;
 }
 
 .top-header {
@@ -27,6 +24,10 @@ img {
 
 .top-header .name {
 	font-size: 26px;
+}
+
+h1 {
+	cursor: pointer;
 }
 
 .nav ul {
@@ -47,6 +48,20 @@ img {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
+}
+
+.d-block {
+	max-width: 1920px;
+	max-height: 887px;
+	width: 100%;
+	height: auto;
+}
+
+.carousel-item {
+	width: 100%;
+	height: auto;
+
 }
 
 #about {
@@ -68,15 +83,25 @@ img {
 	z-index: -1;
 }
 
+.pictureright {
+	max-width: 418px;
+	max-height: 418px;
+	width: 100%;
+	height: auto;
+}
+
+.picturenina {
+	max-width: 450px;
+	max-height: 450px;
+	width: 100%;
+	height: auto;
+}
+
+
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
-}
-
-.picture img {
-	width: 100%;
-
 }
 
 #about-me {
@@ -94,15 +119,12 @@ img {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 20px;
 }
 
 #about-me p {
 	width: 80%;
-	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
+	/* font-size: 14px; */
 }
 
 .title {
@@ -114,26 +136,29 @@ img {
 	justify-content: center;
 }
 
-.nav-pills .nav-link.active-tag,
+.nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-	background-color: #BEB45A;
-	color: #fff;
+	color: #000000;
+	background-color: #beb45a;
 	border-radius: 0;
-	padding: 0.2em 1em;
-
 }
-
 
 .nav-pills .nav-link {
 	color: #000;
-	cursor: pointer
+	cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link.active-tag {
+	background-color: #beb45a;
+	color: #000000;
+	border-radius: 0;
 }
 
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
-	cursor: pointer
 }
 
 .item-column::after {
@@ -149,6 +174,7 @@ img {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
 
 .mg-prev,
@@ -174,7 +200,7 @@ img {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2rem;
 }
 
 .quote__author {
@@ -277,6 +303,21 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #d8d3a8;
+}
+
+.footer-contact {
+	font-size: 15px;
+	padding: 10px;
+	margin: 0;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
@@ -292,7 +333,7 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6,
+	#about-me h2,
 	#about-me p {
 		width: 100%;
 	}
